@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>header1</title>
+    <style>
+        body {
+            height: auto;
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .button {
+            font-size: 17px;
+            background-color: #0071e3;
+            /* 버튼 배경색 */
+            color: white;
+            /* 버튼 글자색 */
+            padding: 10px 20px;
+            /* 버튼 내부 여백 */
+            border-radius: 20px;
+            /* 왼쪽, 오른쪽 끝 모서리 둥글게 만들기 */
+            border: none;
+            /* 버튼 테두리 없애기 */
+        }
+
+
+        header {
+            font-size: 12px;
+            overflow: hidden;
+            height: 50px;
+            background-color: rgba(0, 0, 0, 0.5);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            transition: all 1s;
+            padding: 5px;
+            padding-left: 300px;
+            padding-bottom: 10px;
+            z-index: 1;
+        }
+
+        header.over {
+            background-color: #f5f5f7;
+        }
+
+        header.over h1 a {
+            color: black;
+        }
+
+        header.down {
+            top: -100px;
+        }
+
+        section {
+            height: 1050px;
+            background-color: #f5f5f7;
+        }
+
+        section:nth-of-type(2) {
+            background-image: url(images/apple_pencil_hero__re8xbxq9vr2i_large_2x.jpeg);
+            background-repeat: no-repeat;
+            background-position: center;
+            position: relative;
+            background-size: 70%;
+            padding-top: 0;
+        }
+
+        section:nth-of-type(1) {
+            margin: 0;
+            height: auto;
+            text-align: center;
+        }
+
+        h3 {
+            font-size: 4rem;
+            margin: 0;
+            padding-top: 150px;
+            font-weight: 800;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+            /* 행간 조정 */
+            padding-top: 30px;
+            margin: 0;
+        }
+
+        section:nth-child(4) {
+            background-color: white;
+            text-align: center;
+            background-image: url("images/apple_pencil_2nd_gen__gffltxsufu6a_large_2x.png");
+            background-repeat: no-repeat;
+            background-size: 8%;
+            background-position: center;
+            padding-bottom: 30%;
+        }
+
+        footer {
+            font-size: 5px;
+            background-color: rgb(78, 78, 78);
+            height: 200px;
+            color: #f5f5f7;
+            padding: 5%;
+        }
+
+        .pencil {
+            text-align: left;
+            padding-left: 23%;
+            padding-top: 10%;
+        }
+
+        .pencil h2 {
+            font-size: 3rem;
+        }
+
+        .pencil h1 {
+            font-weight: 350;
+            padding-bottom: 15px;
+        }
+
+        .pencil p {
+            line-height: 2.5;
+        }
+
+        .hover {
+            padding-top: 5%;
+        }
+
+        .hover h2 {
+            font-size: 3rem;
+        }
+
+        .ac {
+            height: 600px;
+            text-align: center;
+            padding-top: 0;
+            background-image: url("images/ipad_pencil_keyboard_accessories__fjs19kkqlrue_large_2x.jpeg");
+            background-repeat: no-repeat;
+            background-size: 90%;
+            background-position: center;
+        }
+
+        .ddd {
+            background-color: #f5f5f7;
+            text-align: center;
+        }
+        .ppp{
+            color: #0071e3;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <h1><a href="">Apple Pencil</a></h1>
+    </header>
+    <section>
+        <h3>상상을 적어내다.</h3>
+        <p>Apple Pencil은 그림을 그리고, 메모를 적고,
+            뭔가 끄적거리는 행위가 어떤 느낌으로 이루어져야<br> 하는지에 대한 기준을 제시합니다.
+            직관적이고, 정밀하면서도 사뭇 신기롭죠. 거의 인지 못할 정도로<br>짧은 지연 시간과 픽셀 단위의 정밀함,
+            기울기와 압력 감지 기능, 팜리젝션 기능까지 모두 갖추고<br>있습니다.
+            영감이 떠오른 순간, 바로 아이디어를 구체화할 수 있죠.</p>
+    </section>
+    <section></section>
+    <section>
+        <h3>당신의 iPad에 맞는<br>Apple Pencil은?</h3>
+        <div class="pencil">
+            <h2>Apple Pencil</h2>
+            <h1>2세대<br>₩195,000</h1>
+            <a class="button">구입하기</a>
+            <p>
+                무선 페어링 및 충전<br>
+                자석으로 부착<br>
+                두 번 탭해서 도구 전환<br>
+                픽셀 단위의 정밀함<br>
+                기울임 및 압력 감지<br>
+                거의 느껴지지 않는 지연 시간<br>
+                무료 각인 서비스<br>
+            </p>
+        </div>
+        <div class="hover">
+            <h2>Apple Pencil 호버</h2>
+            <p>Apple Pencil의 ‘호버’ 기능은 Apple Pencil이 닿게 될 지점이 어딘지를 정확하게 보여줍니다.
+                덕분에 글씨를 쓰고,<br>스케치를 하고, 그림을 그릴 때 훨씬 정밀하게 작업할 수 있죠.
+                홈 화면에서 앱과 위젯 위로 Apple Pencil을 가져가면 앱과<br>위젯이 살짝 커지면서 반응합니다.
+                마킹을 하기 전 마킹이 될 곳을 미리 볼 수 있고, 물감을 덧칠하기 전에 섞이면 어떤 색감이<br>날지 먼저 확인할 수도 있죠.
+                Apple Pencil 호버. Apple Pencil로 하는 모든 일에 매력적인 사용성을 더해줍니다.*</p>
+        </div>
+    </section>
+    <div class="ddd">
+        <h3>iPad의 능력을<br>
+            키워주는 액세서리.</h3>
+        <p>
+            키보드, 케이스, 커버, Apple Pencil, AirPods 등<br>
+            다양한 액세서리를 만나보세요.
+        </p>
+        <p class="ppp">
+            iPad 액세서리 쇼핑하기 >
+        </p>
+    </div>
+    <section class="ac">.
+    </section>
+    <footer>
+        <p>
+            Copyright © 2023 Apple Inc. 모든 권리 보유<br>
+            개인정보 처리방침 웹 사이트 이용 약관 판매 및 환불 법적 고지 사이트 맵<br>
+사업자등록번호 : 120-81-84429 | 통신판매업신고번호 : 제 2011-서울강남-00810호 | 대표이사 : PETER DENWOOD |<br>
+ 주소 : 서울 특별시 강남구 영동대로 517 | 대표전화 : 02-6712-6700 | 팩스 : 02-6928-0000
+        </p>
+    </footer>
+
+    <script>
+        var myHeader = document.getElementById("header");
+        //마우스이벤트
+        // console.log(document.getElementById("header"));
+
+        myHeader.onmouseover = function () {
+            console.log(this);
+            console.log(myHeader);
+            this.classList.add("over");
+            // this.style.backgroundColor = "white";
+        }
+        myHeader.onmouseout = function () {
+            this.classList.remove("over");
+            // console.log("onmouseout");
+            // this.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+        }
+
+        //스크롤 이벤트
+        window.addEventListener("scroll", function () {
+            console.log(window.scrollY);
+            if (window.scrollY > 200) {
+                console.log("200 이상");
+                // console.log(myHeader);
+                myHeader.style.top = -100 + "px";
+                // myHeader.classList.add("down");
+                // myHeader.classList.remove("up");
+            }
+            else {
+                console.log("200 이하");
+                myHeader.style.top = 0 + "px";
+                // myHeader.classList.add("down");
+                // myHeader.classList.remove("up");
+            }
+        });
+    </script>
+</body>
+
+</html>
